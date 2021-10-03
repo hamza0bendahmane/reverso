@@ -22,7 +22,7 @@ router.get('/api', (request, response) => {
     var query =  request.params.query ;
 
     reverso.getTranslation(query, 'French', 'Arabic', (res) => {
-        console.log(response);
+        console.log(res);
         response.status(200).json(res);
     }).catch(err => {
         console.error(err);
@@ -32,7 +32,7 @@ router.get('/api', (request, response) => {
       var query =  request.params.query ;
 
     reverso.getTranslation(query, 'Arabic', 'French', (res) => {
-        console.log(response);
+        console.log(res);
         response.status(200).json(res);
     }).catch(err => {
         console.error(err);
