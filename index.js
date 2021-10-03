@@ -16,7 +16,6 @@ app.use(
 
 
 router.get('/api/',function(req, res){
-    res.render('test'); // This should have a view
     res.status(200).json({ info: 'Congrats.... for Success Connexion , This is reverso API' })
 
   })
