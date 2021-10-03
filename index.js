@@ -14,7 +14,7 @@ const router = Router();
 
 
 router.get('/api', (request, response) => {
-    response.status(200).json({ info: 'Congrats.... for Success Connexion , This is Karini API' })
+    response.status(200).json({ info: 'Congrats.... for Success Connexion , This is reverso API' })
   })
 
 app.listen(port, () => {
