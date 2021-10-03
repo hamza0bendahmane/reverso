@@ -45,5 +45,5 @@ router.get('/api', (request, response) => {
 
 
 app.listen(port, () => {
-  console.log(`App running on port ${port}.`)
+  console.log(`App is running on port ${port}.`)
 })
