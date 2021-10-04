@@ -3,12 +3,11 @@
 <div style='display: flex;'>
 
 - 🌱 **About:** A free API that give fast responses for any languages ..
-- 😄 **Functions:** Translation , Examples , Spell
+- ⚽ **Functions:** Translation , Examples , Spell
 - 💬 **Created By:** Hamza Bendahmane
 </div>
 <div style='display: flex;'>
 
-- 🌍 **How To use:** 
   
 **Required Params**
   
@@ -19,6 +18,7 @@
   </div>
 
 <div style='display: flex;'>
+- 🌍 **How To use:** 
 
 1. Translate : https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
 2. Spell :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
