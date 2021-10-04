@@ -12,7 +12,7 @@ def home():
     return '<h1>Zed Reverso Context</h1><p>This site is a simple API for Context translation .. created By Createch DZ check us on Facebook <a href="https://www.facebook.com/thecreatechdz">Createch DZ</a>.</p>'
 
 @app.route('/api/translate', methods=['GET'])
-def api_filter():
+def translate():
     query_parameters = request.args
 
     _word = query_parameters.get('word')
@@ -25,7 +25,7 @@ def api_filter():
     return list(client.get_translations(_word))
 
 @app.route('/api/spell', methods=['GET'])
-def api_filter():
+def spell():
     query_parameters = request.args
 
     _word = query_parameters.get('word')
@@ -38,7 +38,7 @@ def api_filter():
     return list(client.get_search_suggestions(_word))
 
 @app.route('/api/examples', methods=['GET'])
-def api_filter():
+def examples():
     query_parameters = request.args
 
     _word = query_parameters.get('word')
