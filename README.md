@@ -23,9 +23,9 @@
 **How To use**
 
 
-1. Translate : https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
-2. Spell :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
-3. Examples :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
+1. ***Translate*** : https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
+2. ***Spell*** :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
+3. ***Examples*** :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
 </div>
 
 
