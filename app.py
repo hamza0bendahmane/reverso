@@ -1,6 +1,5 @@
 from reverso_context_api import Client
 from flask import Flask,request
-from os import environ
 app = Flask(__name__)
 
 @app.route('/api', methods=['GET'])
@@ -46,7 +45,7 @@ def examples():
 
     return list(client.get_translation_samples(_word, cleanup=True))
        
-app.run(environ.get('PORT'))
+app.run()
 
 
 
