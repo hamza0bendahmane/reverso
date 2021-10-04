@@ -2,10 +2,7 @@ from reverso_context_api import Client
 from flask import Flask,request
 app = Flask(__name__)
 
-client = Client("fr", "ar")
-print ('hb')
 
-print(list(client.get_translations("juge")))
 
 @app.route('/api', methods=['GET'])
 def home():
