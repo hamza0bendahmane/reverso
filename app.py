@@ -1,6 +1,8 @@
 from reverso_context_api import Client
 from flask import Flask,request
 from gevent.pywsgi import WSGIServer
+from flask import jsonify
+
 app = Flask(__name__)
 
 @app.route('/api', methods=['GET'])
@@ -18,7 +20,7 @@ def translate():
     if not (_word or _from or _to):
      return "null"
 
-    return ('data','200',list(client.get_translations(_word)))
+    return jsonify(list(client.get_translations(_word)))
 
 @app.route('/api/spell', methods=['GET'])
 def spell():
@@ -31,8 +33,7 @@ def spell():
     if not (_word or _from or _to):
      return "null"
 
-    return ('data','200',list(client.get_search_suggestions(_word)))
-
+    return jsonify(list(client.get_search_suggestions(_word)))
 
 @app.route('/api/examples', methods=['GET'])
 def examples():
@@ -44,9 +45,8 @@ def examples():
     client = Client(_from, _to)
     if not (_word or _from or _to):
      return "null"
-     
-    return ('data','200',list(client.get_translation_samples(_word, cleanup=True)))
 
+    return jsonify(list(client.get_translation_samples(_word, cleanup=True)))
 
 if __name__ == '__main__':
     # Debug/Development
