@@ -9,10 +9,13 @@
 <div style='display: flex;'>
 
 - 🌍 **How To use:** 
+  
 **Required Params**
+  
  *from* : the source Language example : en , ar ... ext
  *to* : the destination Language example : en , ar ... ext
  *word* : the word ,sentence that you want to perform action on it example : fr , ar ... ext
+  
   </div>
 
 <div style='display: flex;'>
