@@ -18,7 +18,8 @@
   </div>
 
 <div style='display: flex;'>
-- 🌍 **How To use:** 
+- 🌍 **How To use:** ..
+
 
 1. Translate : https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
 2. Spell :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
