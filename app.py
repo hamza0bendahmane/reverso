@@ -18,7 +18,7 @@ def translate():
     if not (_word or _from or _to):
      return "null"
 
-    return list(client.get_translations(_word))
+    return ('data','200',list(client.get_translations(_word)))
 
 @app.route('/api/spell', methods=['GET'])
 def spell():
@@ -31,7 +31,8 @@ def spell():
     if not (_word or _from or _to):
      return "null"
 
-    return list(client.get_search_suggestions(_word))
+    return ('data','200',list(client.get_search_suggestions(_word)))
+
 
 @app.route('/api/examples', methods=['GET'])
 def examples():
@@ -43,8 +44,9 @@ def examples():
     client = Client(_from, _to)
     if not (_word or _from or _to):
      return "null"
+     
+    return ('data','200',list(client.get_translation_samples(_word, cleanup=True)))
 
-    return list(client.get_translation_samples(_word, cleanup=True))
 
 if __name__ == '__main__':
     # Debug/Development
