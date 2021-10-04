@@ -13,6 +13,9 @@
  *from* : the source Language example : en , ar ... ext
  *to* : the destination Language example : en , ar ... ext
  *word* : the word ,sentence that you want to perform action on it example : fr , ar ... ext
+  </div>
+
+<div style='display: flex;'>
 
 1. Translate : https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
 2. Spell :  https://zed-reverso-api.herokuapp.com/api/translate?from={from}&to={to}&word={word}
