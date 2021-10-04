@@ -46,7 +46,7 @@ def examples():
     if not (_word or _from or _to):
      return "null"
 
-    return jsonify(list(client.get_translation_samples(_word, cleanup=True)))
+    return jsonify(list(client.get_translation_samples(_word)))
 
 if __name__ == '__main__':
     # Debug/Development
