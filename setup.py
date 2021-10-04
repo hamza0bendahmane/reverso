@@ -3,7 +3,6 @@ from flask import Flask,request
 app = Flask(__name__)
 
 
-
 @app.route('/api', methods=['GET'])
 def home():
     return '<h1>Zed Reverso Context</h1><p>This site is a simple API for Context translation .. created By Createch DZ check us on Facebook <a href="https://www.facebook.com/thecreatechdz">Createch DZ</a>.</p>'
