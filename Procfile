@@ -1,2 +1,2 @@
-chmod 755 yourfile.py
-.index.py
+web: python YOURSCRIPTNAME.py
+worker: python YOURSCRIPTNAME.py 
