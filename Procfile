@@ -1,3 +1,2 @@
-web: python YOURSCRIPTNAME.py
-worker: python YOURSCRIPTNAME.py 
+python3 app.py
 heroku ps:scale web=1
