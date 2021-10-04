@@ -45,8 +45,8 @@ def examples():
 
     return list(client.get_translation_samples(_word, cleanup=True))
        
-app.lis
-app.run()
+if __name__ == '__main__':
+  app.run()
 
 
 
